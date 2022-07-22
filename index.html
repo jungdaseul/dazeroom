@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>데이즈룸</title>
+    <!-- 파비콘 -->
+    <link href="img/favicon.png" type="image/icon" rel="shortcut icon">
+
+    <!-- fullpage.css -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+    <!-- swiper slide css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css "href="css/slick.css">
+    <link rel="stylesheet" type="text/css "href="css/slick-theme.css">
+    <!-- splide css 연결 -->
+    <link href="css/splide.min.css" type="text/css" rel="stylesheet">
+    <!-- 외부 css 연결 -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- fullpage.js  -->
+    <script src="js/jquery.fullPage.js"></script>
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/9c5636788c.js" crossorigin="anonymous"></script>
+    <!-- swiper slide js cdn -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- tweenmax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script type="text/javascript" src="js/slick.js"></script>
+    <!-- splide js 연결 -->
+    <script src="js/splide.min.js"></script>
+    <!-- 외부 js 연결 -->
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <!-- 로고를 배경이미지로 넣기(반응형) -->
+        <div class="header_in">
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="brand.html" class="sub_link">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>브랜드스토리</p>
+                                    <p>BrandStory</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="#">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>주방</p>
+                                    <p>Kitchen</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 서브메뉴 -->
+                        <ul class="sub">
+                            <li><a href="#">냄비와 팬</a></li>
+                            <li><a href="#">조리도구</a></li>
+                            <li><a href="#">찬통&보관용기</a></li>
+                            <li><a href="#">주방정리용품</a></li>
+                            <li><a href="#">주방잡화</a></li>
+                            <li><a href="#">오일&양념</a></li>
+                            <li><a href="#">키친유리병</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="#">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>식기</p>
+                                    <p>Tableware</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 서브메뉴 -->
+                        <ul class="sub">
+                            <li><a href="#">밥&국&면기</a></li>
+                            <li><a href="#">플레이트</a></li>
+                            <li><a href="#">찬기</a></li>
+                            <li><a href="#">커트러리</a></li>
+                            <li><a href="#">수저&받침대</a></li>
+                            <li><a href="#">테이블소품</a></li>
+                            <li><a href="#">식기세트</a></li>
+                            <li><a href="#">쟁반&테이블매트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="#">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>생활</p>
+                                    <p>Living</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 서브메뉴 -->
+                        <ul class="sub">
+                            <li><a href="#">바구니</a></li>
+                            <li><a href="#">수납선반</a></li>
+                            <li><a href="#">정리용품</a></li>
+                            <li><a href="#">휴지통</a></li>
+                            <li><a href="#">청소용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="#">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>홈카페</p>
+                                    <p>Homecafe</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 서브메뉴 -->
+                        <ul class="sub">
+                            <li><a href="#">유리컵</a></li>
+                            <li><a href="#">머그와커피잔</a></li>
+                            <li><a href="#">티포트와커피서버</a></li>
+                            <li><a href="#">카페소품</a></li>
+                            <li><a href="#">커트러리</a></li>
+                            <li><a href="#">술잔</a></li>
+                            <li><a href="#">디저트볼</a></li>
+                            <li><a href="#">와인&고블렛</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="#">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>홈데코</p>
+                                    <p>Homedeco</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 서브메뉴 -->
+                        <ul class="sub">
+                            <li><a href="#">꽃과화병</a></li>
+                            <li><a href="#">인테리어소품</a></li>
+                            <li><a href="#">캔들소품</a></li>
+                            <li><a href="#">포스터&월데코</a></li>
+                            <li><a href="#">피크닉소품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 주메뉴 -->
+                        <a href="#">
+                            <!-- awesome icon -->
+                            <i class="fa-solid fa-circle"></i>
+                            <!-- 주메뉴 애니메이션 -->
+                            <div class="main_menu">
+                                <div class="main_menu_box">
+                                    <p>패브릭</p>
+                                    <p>Fabric</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 서브메뉴 -->
+                        <ul class="sub">
+                            <li><a href="#">머그&러그</a></li>
+                            <li><a href="#">테이블보</a></li>
+                            <li><a href="#">패브릭소품</a></li>
+                            <li><a href="#">패브릭바스켓</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right_menu">
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/login.png" alt="로그인"></a>
+                        <a href="#">LOGIN</a>
+                    </li>
+                    <li><a href="#"><img src="img/sign.png" alt="회원가입"></a>
+                        <a href="#">SIGN UP</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 모바일에서 보이는 메뉴 버튼 -->
+            <div class="menu_btn">
+                <a href="#">
+                    <img src="img/ham.png" alt="">
+                </a>
+            </div>
+            <!-- 모바일에서 보이는 메뉴 영역 -->
+            <div class="mobile_nav">
+                <div class="mobile_nav_in">
+                    <div class="mobile_top_menu">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                        </ul>                    
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="brand.html" class="sub_link">BrandStory</a>
+                            </li>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="#">Kitchen<i class="fa-solid fa-angle-down"></i></a>
+                                <!-- 서브메뉴 -->
+                                <ul class="sub">
+                                    <li><a href="#">냄비와 팬</a></li>
+                                    <li><a href="#">조리도구</a></li>
+                                    <li><a href="#">찬통&보관용기</a></li>
+                                    <li><a href="#">주방정리용품</a></li>
+                                    <li><a href="#">주방잡화</a></li>
+                                    <li><a href="#">오일&양념</a></li>
+                                    <li><a href="#">키친유리병</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="#">Tableware<i class="fa-solid fa-angle-down"></i></a>
+                                <!-- 서브메뉴 -->
+                                <ul class="sub">
+                                    <li><a href="#">밥&국&면기</a></li>
+                                    <li><a href="#">플레이트</a></li>
+                                    <li><a href="#">찬기</a></li>
+                                    <li><a href="#">커트러리</a></li>
+                                    <li><a href="#">수저&받침대</a></li>
+                                    <li><a href="#">테이블소품</a></li>
+                                    <li><a href="#">식기세트</a></li>
+                                    <li><a href="#">쟁반&테이블매트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="#">Living<i class="fa-solid fa-angle-down"></i></a>
+                                <!-- 서브메뉴 -->
+                                <ul class="sub">
+                                    <li><a href="#">바구니</a></li>
+                                    <li><a href="#">수납선반</a></li>
+                                    <li><a href="#">정리용품</a></li>
+                                    <li><a href="#">휴지통</a></li>
+                                    <li><a href="#">청소용품</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="#">Homecafe<i class="fa-solid fa-angle-down"></i></a>
+                                <!-- 서브메뉴 -->
+                                <ul class="sub">
+                                    <li><a href="#">유리컵</a></li>
+                                    <li><a href="#">머그와커피잔</a></li>
+                                    <li><a href="#">티포트와커피서버</a></li>
+                                    <li><a href="#">카페소품</a></li>
+                                    <li><a href="#">커트러리</a></li>
+                                    <li><a href="#">술잔</a></li>
+                                    <li><a href="#">디저트볼</a></li>
+                                    <li><a href="#">와인&고블렛</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="#">Homedeco<i class="fa-solid fa-angle-down"></i></a>
+                                <!-- 서브메뉴 -->
+                                <ul class="sub">
+                                    <li><a href="#">꽃과화병</a></li>
+                                    <li><a href="#">인테리어소품</a></li>
+                                    <li><a href="#">캔들소품</a></li>
+                                    <li><a href="#">포스터&월데코</a></li>
+                                    <li><a href="#">피크닉소품</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- 주메뉴 -->
+                                <a href="#">Fabric<i class="fa-solid fa-angle-down"></i></a>
+                                <!-- 서브메뉴 -->
+                                <ul class="sub">
+                                    <li><a href="#">머그&러그</a></li>
+                                    <li><a href="#">테이블보</a></li>
+                                    <li><a href="#">패브릭소품</a></li>
+                                    <li><a href="#">패브릭바스켓</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile_sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/insta.png" alt="인스타그램">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/facebook.png" alt="페이스북">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/youtube.png" alt="유투브">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <!--모바일 메뉴 영역 닫기 버튼 -->
+                    <div class="mobile_close">
+                        <a href="#">
+                            <img src="img/close.png" alt="닫기">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="wrap" id="fullpage">
+        <section class="section visual">
+            <!-- swiper slide -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide s1 active">
+                    <a href="#">
+                        <div class="s1_title">
+                            <div class="circle">
+                                <h4></h4>
+                                <h6></h6>
+                            </div>
+                            <h5>new item</h5>
+                        </div>
+                        <h3>glass candel holder</h3>
+                        <h5>french vintage mood style</h5>
+                        <button>바로 보러가기</button>
+                    </a>
+                  </div>
+                  <div class="swiper-slide s2 active">
+                    <a href="#">
+                        <h5>이벤트 데이</h5>
+                        <h3>5월 가정의 달 이벤트</h3>
+                        <h5>홈카페 유리/머그컵 30% 세일</h5>
+                        <button>바로 보러가기</button>
+                    </a>
+                  </div>
+                  <div class="swiper-slide s3 active">
+                    <a href="#">
+                        <h3><span>The kitchen is always</span>
+                            <span>with the Dazeroom.</span></h3>
+                        <button>바로 보러가기</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section banner">
+            <h2>처음 만나는 신혼살림</h2>
+            <h1>DAZE ROOM <img src="img/set.png" alt="수저세트">-BOX</h1>
+            <div class="contents">
+                <ul>
+                    <li><a href="#">
+                        <div class="hover_ani">
+                            <div class="li_bg bg1"></div>
+                            <div class="li_des">
+                                <h3>DISHES</h3>
+                                <p>그릇세트</p>
+                                <button>자세히보기</button>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="hover_ani">
+                            <div class="li_bg bg2"></div>
+                            <div class="li_des">
+                                <h3>POT</h3>
+                                <p>냄비/팬</p>
+                                <button>자세히보기</button>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="hover_ani">
+                            <div class="li_bg bg3"></div>
+                            <div class="li_des">
+                                <h3>CUPS</h3>
+                                <p>머그/유리컵</p>
+                                <button>자세히보기</button>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div> 
+                        </div>       
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section six_tab">
+            <h2>살아있는 센스, 데이즈룸이</h2>
+            <h1>여러분의 고민을 해결해드립니다.</h1>
+            <!-- slick slider -->
+            <div class="product">
+                <div class="p1">
+                    <div class="product_left">
+                        <h3>DAZEROOM 캠핑</h3>
+                        <p>요즘은 캠핑도 감성이 대세!<br>데이즈룸 아이템으로 캠핑 즐겨보세요.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>더보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>CAMPING</i>
+                    </div>
+                </div>
+                <div class="p2">
+                    <div class="product_left">
+                        <h3>DAZEROOM 1인</h3>
+                        <p>1인 가구를 위한 상품도 다양하게!<br>혼자 쓴다고 대충 쓰지말자!</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>더보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>SINGLE</i>
+                    </div>
+                </div>
+                <div class="p3">
+                    <div class="product_left">
+                        <h3>DAZEROOM 카페</h3>
+                        <p>코로나 시국, 유명카페 비주얼<br>우리집에서도 즐기자!</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>더보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>CAFE</i>
+                    </div>
+                </div>
+                <div class="p4">
+                    <div class="product_left">
+                        <h3>DAZEROOM 건강</h3>
+                        <p>바쁜 현대 사회, 건강이 최고!<br>슬림바디, 근육이완, 스트레칭 완료!</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>더보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>HEALTH</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section line_tab">            
+            <h1>DAZEROOM 고객후기</h1>
+            <div class="membership">
+                <!--썸네일 splide-->
+                <div class="membership_title">
+                    <div id="thumbnail-carousel" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">플레이트<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <li>|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">냄비<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <li>|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">머그컵<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <li>|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">인테리어<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <li>|</li>
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">일본식기<i class="fa-solid fa-play"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 이미지 splide -->
+                <div id="main-carousel" class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/review2.png" alt="플레이트">
+                                    </div>
+                                  </div>
+                                  <!-- 탭내용 설명 -->
+                                  <div class="splide_des">
+                                    <div class="splide_des_in">
+                                        <h3>타블도트 슬로우 플레이트</h3>
+                                        <p>크리미하고 묵직한 바디에<br>
+                                            스프레드 마블로 질감을 더한<br>
+                                            타블도트 슬로우 테이블웨어</p>
+                                        <a href="#">후기보기<i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                  </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/review3.png" alt="냄비">
+                                    </div>
+                                  </div>
+                                  <!-- 탭내용 설명 -->
+                                  <div class="splide_des">
+                                    <div class="splide_des_in">
+                                        <h3>플랫팟 IH 크림화이트 냄비</h3>
+                                        <p><span>혼수냄비로 강력 추천하는 제품으로</span><br>
+                                            <span>원목손잡이와 크림화이트 색상 디자인에</span><br>
+                                            <span>기능성까지 모두 갖춘 플랫팟 시리즈 냄비</span></p>
+                                         <a href="#">후기보기<i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                  </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/review4.png" alt="머그컵">
+                                    </div>
+                                  </div>
+                                  <!-- 탭내용 설명 -->
+                                  <div class="splide_des">
+                                    <div class="splide_des_in">
+                                        <h3>볼 핸드 머그컵</h3>
+                                        <p><span>레트로품 무드에 유니크한 디자인으로<br>
+                                            모던하지만 투박하면서도</span><br><span>세련된 트렌디함을
+                                            느낄수 있는 머그컵</span></p>
+                                        <a href="#">후기보기<i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                  </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/review5.png" alt="발매트">
+                                    </div>
+                                  </div>
+                                  <!-- 탭내용 설명 -->
+                                  <div class="splide_des">
+                                    <div class="splide_des_in">
+                                        <h3>럭키 스마일 소프트 발매트</h3>
+                                        <p><span>밝고 화사한 색감에 부드러운 촉감까지<br>
+                                            더해져 더욱 매력적인 제품으로</span><br>
+                                            <span>매일 보는 공간에 평소와는 다른<br>
+                                            활력을 불어 넣을 수 있는 아이템</span></p>
+                                        <a href="#">후기보기<i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                  </div>
+                                 </li>
+                            </li>
+                            <li class="splide__slide">
+                                <!-- 탭내용 이미지 -->
+                                <div class="splide_img">
+                                    <div class="splide_img_in">
+                                        <img src="img/review6.png" alt="일본식기">
+                                    </div>
+                                </div>
+                                  <!-- 탭내용 설명 -->
+                                  <div class="splide_des">
+                                    <div class="splide_des_in">
+                                        <h3>하츠키코보 후루야 덴다시</h3>
+                                        <p><span>전통적인 무늬에 현대적인 해석을 더해<br>
+                                            가볍고 데일리한 패턴으로</span><br>
+                                            <span>자연스럽지만 매력적인 도자기</span></p>
+                                        <a href="#">후기보기<i class="fa-solid fa-play"></i></a>
+                                    </div>
+                                  </div>
+                             </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>       
+        </section>
+        <section class="section hive">
+            <h2>DAZEROOM'S STORY</h2>
+            <h1>Everything will be good with D</h1>
+            <div class="hive_box">
+                <div class="hive_left">
+                    <p>오늘의 일상도 안녕하신가요?</p>
+                    <p>매일을 살아가며 삶을 가꾸어 나가는 것만큼 중요한 것이 있을까요</p>
+                    <p>데이즈룸은 평번한 일상을 좀 더 특별하게 만들 수 있는<br>
+                        감성적이고 반짝이는 아이템들을 소개해드리고있습니다.</p>
+                    <p>데이즈룸의 취향으로 모은 일상의 제품들이<br>
+                        여러분에게 작은 기쁨을 드렸으면 하는 바람입니다.</p>
+                </div>
+                <div class="hive_right">
+                    <div class="hive_btns">
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg1">
+                                    <img src="img/Raindrop 1.png" alt="주방">
+                                </div>
+                                <div class="li_bg2">
+                                    <img src="img/Raindrop 2.png" alt="수저세트">
+                                </div>
+                                <div class="li_bg3">
+                                    <img src="img/Raindrop 3.png" alt="매트">
+                                </div>
+                                <div class="li_bg4">
+                                    <img src="img/Raindrop 4.png" alt="등">
+                                </div>
+                                <div class="li_bg5">
+                                    <img src="img/Raindrop 5.png" alt="거울">
+                                </div>
+                                <div class="li_bg6">
+                                    <img src="img/Raindrop 6.png" alt="유리컵">
+                                </div>
+                                <div class="li_bg7">
+                                    <img src="img/daze.png" alt="데이즈룸">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section photo">
+            <div class="photo_in">
+                <h3><span>DAZEROOM 고객분들의</span><span>사랑이 듬뿍 담긴</span></h3>
+                <p>BEST ITEM<br>바로 만나보세요.</p>
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg"></div>
+                        <div class="li_des">
+                            <button>더보기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section store">
+            <div class="store_left">
+                <!-- swiper slider -->
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide s2-1">
+                          <a href="#"></a>
+                      </div>
+                      <div class="swiper-slide s2-2">
+                          <a href="#"></a>
+                      </div>
+                      <div class="swiper-slide s2-3">
+                        <a href="#"></a>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+            <div class="store_right">
+                <h2>데이즈룸 쇼룸에 오시면</h2>
+                <h1>다양한 상품을<br>직접 만나보실 수 있습니다.</h1>
+                <p><span>데이즈룸의 제품을 실제 보고, 만져보고
+                    구매하고 싶으신 분들을 위해<br></span>쇼룸을 운영 중이며
+                    온라인에서는 판매하지 않는<br>
+                    <span>다양한 소품 또한 판매중이랍니다.</span>
+                    </p>
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg"></div>
+                        <div class="li_des">
+                            <button>지도 보러가기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section order">
+            <h1>DAZEROOM 상담하기</h1>
+            <div class="order_box">
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg bg1"></div>
+                        <div class="li_des">
+                            <b>01</b>
+                            <h2>카카오톡<br>친구맺기</h2>
+                            <button>연결하기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg bg2"></div>
+                        <div class="li_des">
+                            <b>02</b>
+                            <h2>바로<br>전화상담</h2>
+                            <button>연결하기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <div class="top">top</div>
+            <div class="footer_top">
+                <div class="tel">
+                    <div class="tel1">
+                        <span>주식회사 데이즈룸 고객센터</span>
+                        <p>070-4370-7581</p>
+                    </div>
+                    <div class="tel2">
+                        <p>이용시간 평일 오전 09:00 ~ 오후 06:00</p>
+                        <p>점심시간 12:00 ~ 13:00</p>
+                    </div>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/insta.png" alt="인스타그램">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/facebook.png" alt="페이스북">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/youtube.png" alt="유튜브">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="addr">
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <address>
+                        <span>주식회사 데이즈룸<br>
+                        대표 / 고영직&nbsp;&nbsp;&nbsp;&nbsp; 
+                        주소 / 인천광역시 계양구 새풀로7번길 1 (효성동)&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>사업자번호 / 236-81-01359<br></span>
+                        <span>이메일 / dazeroom@naver.com</span>
+                    </address>
+                    <p>COPYRIGHT ⓒ 주식회사 키친앤리빙 ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="footer_logo">
+                    <img src="img/logo.png" alt="로고">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">       
+        $(".product").slick({
+             dots: true,
+             infinite: true,
+             speed: 500,
+             fade: true,
+             cssEase: 'linear'
+         });
+     </script>
+</body>
+</html>
